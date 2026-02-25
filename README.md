@@ -93,39 +93,106 @@ High-level map (click folders for detailed guides):
 
 ---
 
-## 📚 Table of Contents (quick links)
+## 📚 Table of Contents
 
-- Core getting started
+- Core — getting started
   - [START-HERE.md](START-HERE.md)
   - [GLOSSARY.md](GLOSSARY.md)
 
-- Search engines
+- Google
+  - [google/01-basic-operators.md](google/01-basic-operators.md)
+  - [google/02-advanced-operators.md](google/02-advanced-operators.md)
+  - [google/03-file-discovery.md](google/03-file-discovery.md)
+  - [google/04-login-portals.md](google/04-login-portals.md)
+  - [google/05-exposed-databases.md](google/05-exposed-databases.md)
+  - [google/06-config-and-secret-files.md](google/06-config-and-secret-files.md)
+  - [google/07-sensitive-documents.md](google/07-sensitive-documents.md)
+  - [google/08-cameras-and-iot.md](google/08-cameras-and-iot.md)
+  - [google/09-vulnerability-discovery.md](google/09-vulnerability-discovery.md)
+  - [google/10-cloud-storage-exposure.md](google/10-cloud-storage-exposure.md)
+  - [google/11-email-and-people.md](google/11-email-and-people.md)
+  - [google/12-subdomain-enumeration.md](google/12-subdomain-enumeration.md)
   - [google/CHEATSHEET.md](google/CHEATSHEET.md)
+
+- Bing
   - [bing/README.md](bing/README.md)
+  - [bing/01-basic-operators.md](bing/01-basic-operators.md)
+  - [bing/02-unique-bing-operators.md](bing/02-unique-bing-operators.md)
+  - [bing/CHEATSHEET.md](bing/CHEATSHEET.md)
+
+- DuckDuckGo
   - [duckduckgo/README.md](duckduckgo/README.md)
+  - [duckduckgo/01-operators.md](duckduckgo/01-operators.md)
+  - [duckduckgo/02-bangs-for-security.md](duckduckgo/02-bangs-for-security.md)
+  - [duckduckgo/CHEATSHEET.md](duckduckgo/CHEATSHEET.md)
 
-- Internet scanners
+- Shodan
   - [shodan/README.md](shodan/README.md)
+  - [shodan/01-basic-filters.md](shodan/01-basic-filters.md)
+  - [shodan/02-device-discovery.md](shodan/02-device-discovery.md)
+  - [shodan/03-ics-and-scada.md](shodan/03-ics-and-scada.md)
+  - [shodan/04-exposed-services.md](shodan/04-exposed-services.md)
   - [shodan/05-favicon-hash-technique.md](shodan/05-favicon-hash-technique.md)
-  - [censys/README.md](censys/README.md)
-  - [fofa/README.md](fofa/README.md)
-  - [zoomeye/README.md](zoomeye/README.md)
+  - [shodan/06-api-and-automation.md](shodan/06-api-and-automation.md)
+  - [shodan/CHEATSHEET.md](shodan/CHEATSHEET.md)
 
-- Code & secrets
+- Censys
+  - [censys/README.md](censys/README.md)
+  - [censys/01-basic-search.md](censys/01-basic-search.md)
+  - [censys/02-certificate-search.md](censys/02-certificate-search.md)
+  - [censys/CHEATSHEET.md](censys/CHEATSHEET.md)
+
+- FOFA
+  - [fofa/README.md](fofa/README.md)
+  - [fofa/01-operators.md](fofa/01-operators.md)
+  - [fofa/CHEATSHEET.md](fofa/CHEATSHEET.md)
+
+- ZoomEye
+  - [zoomeye/README.md](zoomeye/README.md)
+  - [zoomeye/01-operators.md](zoomeye/01-operators.md)
+  - [zoomeye/CHEATSHEET.md](zoomeye/CHEATSHEET.md)
+
+- GitHub Dorking
   - [github-dorking/README.md](github-dorking/README.md)
+  - [github-dorking/01-code-search-operators.md](github-dorking/01-code-search-operators.md)
   - [github-dorking/02-api-keys-and-secrets.md](github-dorking/02-api-keys-and-secrets.md)
+  - [github-dorking/03-config-file-leaks.md](github-dorking/03-config-file-leaks.md)
+  - [github-dorking/04-database-credentials.md](github-dorking/04-database-credentials.md)
+  - [github-dorking/CHEATSHEET.md](github-dorking/CHEATSHEET.md)
 
 - Specialized engines
   - [specialized-engines/README.md](specialized-engines/README.md)
+  - [specialized-engines/publicwww.md](specialized-engines/publicwww.md)
+  - [specialized-engines/greynoise.md](specialized-engines/greynoise.md)
+  - [specialized-engines/binaryedge.md](specialized-engines/binaryedge.md)
+  - [specialized-engines/onyphe.md](specialized-engines/onyphe.md)
+  - [specialized-engines/hunter-io.md](specialized-engines/hunter-io.md)
+  - [specialized-engines/intelx.md](specialized-engines/intelx.md)
+  - [specialized-engines/pastebin-dorking.md](specialized-engines/pastebin-dorking.md)
+  - [specialized-engines/wigle.md](specialized-engines/wigle.md)
 
-- Playbooks & tooling
+- Playbooks
   - [playbooks/README.md](playbooks/README.md)
   - [playbooks/bug-bounty-recon.md](playbooks/bug-bounty-recon.md)
-  - [tools/README.md](tools/README.md)
+  - [playbooks/find-leaked-credentials.md](playbooks/find-leaked-credentials.md)
+  - [playbooks/cloud-exposure-hunt.md](playbooks/cloud-exposure-hunt.md)
+  - [playbooks/brand-monitoring.md](playbooks/brand-monitoring.md)
+  - [playbooks/pentest-passive-recon.md](playbooks/pentest-passive-recon.md)
 
 - Defense
   - [defense/README.md](defense/README.md)
   - [defense/what-attackers-look-for.md](defense/what-attackers-look-for.md)
+  - [defense/how-to-remove-yourself-from-google.md](defense/how-to-remove-yourself-from-google.md)
+  - [defense/prevent-file-indexing.md](defense/prevent-file-indexing.md)
+  - [defense/robots-txt-guide.md](defense/robots-txt-guide.md)
+
+- Tools
+  - [tools/README.md](tools/README.md)
+  - [tools/shodan-cli.md](tools/shodan-cli.md)
+  - [tools/theharvester.md](tools/theharvester.md)
+  - [tools/recon-ng.md](tools/recon-ng.md)
+  - [tools/pagodo.md](tools/pagodo.md)
+  - [tools/spiderfoot.md](tools/spiderfoot.md)
 
 ---
 
