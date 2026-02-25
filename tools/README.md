@@ -42,6 +42,11 @@ pip install shodan
 shodan init YOUR_API_KEY
 ```
 
+If you plan to use the Shodan favicon hashing example, install the MurmurHash binding:
+```bash
+pip install mmh3 requests
+```
+
 ---
 
 ## 🔗 Related Files

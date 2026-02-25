@@ -34,34 +34,55 @@ Step-by-step:
 ## 🛠️ Python Example (full, runnable)
 
 ```python
-import requests
+# Requirements: pip install requests mmh3
+#!/usr/bin/env python3
+"""Compute the Shodan favicon hash for a site.
+
+This implementation is defensive and production-ready: uses a UA header,
+handles redirects, returns a signed 32-bit int (mmh3.hash), and decodes
+base64 to text before hashing (ensures compatibility across mmh3 versions).
+"""
+import argparse
 import base64
 import mmh3
+import requests
 
-def get_favicon_hash(url):
-    # Download favicon
-    if not url.endswith('/'):
-        url = url.rstrip('/')
-    fav_url = url + '/favicon.ico'
-    resp = requests.get(fav_url, timeout=10)
+HEADERS = {"User-Agent": "Dorking-Encyclopedia/1.0 (+https://github.com/Mohammad-Faiz-Cloud-Engineer/Dorking-Encyclopedia)"}
+
+
+def get_favicon_hash(url: str, timeout: int = 10) -> int:
+    url = url.rstrip('/')
+    fav_url = f"{url}/favicon.ico"
+    resp = requests.get(fav_url, timeout=timeout, headers=HEADERS, allow_redirects=True)
     resp.raise_for_status()
     favicon_data = resp.content
+    if not favicon_data:
+        raise ValueError("No favicon content downloaded")
 
-    # Base64 encode
-    favicon_b64 = base64.b64encode(favicon_data)
+    # Base64 encode and decode to ascii string to be explicit
+    favicon_b64 = base64.b64encode(favicon_data).decode('ascii')
 
-    # mmh3.hash returns signed 32-bit int; Shodan uses that
-    hash_value = mmh3.hash(favicon_b64)
+    # mmh3.hash returns a signed 32-bit int; Shodan stores signed values
+    hash_value = mmh3.hash(favicon_b64, seed=0)
     return hash_value
 
-if __name__ == '__main__':
-    url = 'https://example.com'  # replace with target
+
+def main():
+    parser = argparse.ArgumentParser(description='Compute Shodan favicon hash for a site')
+    parser.add_argument('url', help='Site root URL (e.g. https://example.com)')
+    args = parser.parse_args()
+
     try:
-        h = get_favicon_hash(url)
+        h = get_favicon_hash(args.url)
         print('Favicon Hash:', h)
         print('Shodan Query: http.favicon.hash:%d' % h)
-    except Exception as e:
-        print('Error:', e)
+    except Exception as exc:
+        print('Error computing favicon hash:', exc)
+        raise
+
+
+if __name__ == '__main__':
+    main()
 ```
 
 ---
