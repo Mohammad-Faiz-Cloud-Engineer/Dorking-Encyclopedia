@@ -127,8 +127,8 @@ Visual map:
 
 If this repo helped you, star it and contribute. Pull requests accepted.
 
-![Stars](https://img.shields.io/github/stars/Mohammad-Faiz-Cloud-Engineer/Dorking-Master-Repository)
-![Forks](https://img.shields.io/github/forks/Mohammad-Faiz-Cloud-Engineer/Dorking-Master-Repository)
+![Stars](https://img.shields.io/github/stars/Mohammad-Faiz-Cloud-Engineer/Dorking-Encyclopedia)
+![Forks](https://img.shields.io/github/forks/Mohammad-Faiz-Cloud-Engineer/Dorking-Encyclopedia)
 
 ---
 
