@@ -32,17 +32,21 @@ Dorking is the art of asking search engines very specific questions so they retu
 
 ## 🔍 How This Repo Is Organized
 
-Visual map:
+High-level map (click folders for detailed guides):
 
-- Root: general guides and quick starts
-- `google/` — deep Google dorking operators and file discovery
-- `bing/`, `duckduckgo/` — other web search engines
-- `shodan/`, `censys/`, `fofa/`, `zoomeye/` — internet-wide scanners
-- `github-dorking/` — code search and leaked secrets
-- `specialized-engines/` — niche OSINT engines
-- `playbooks/` — mission-style workflows
-- `defense/` — how to remove yourself from indexes and block exposures
-- `tools/` — usage guides for common recon tooling
+- Root: general guides and quick starts (`START-HERE.md`, `GLOSSARY.md`)
+- `google/` — Google dorking operators, file discovery, subdomain techniques, and cheatsheet
+- `bing/` — Bing operator guide and cheatsheet
+- `duckduckgo/` — DuckDuckGo operators and bangs for security
+- `shodan/` — Shodan guides, favicon hashing, API automation, and cheatsheet
+- `censys/` — Certificate and host search techniques
+- `fofa/` — FOFA operators and examples
+- `zoomeye/` — ZoomEye operators and OSINT patterns
+- `github-dorking/` — code search, leaked secrets, config leaks, and cheatsheet
+- `specialized-engines/` — PublicWWW, GreyNoise, BinaryEdge, Hunter.io, IntelX, PasteBin notes
+- `playbooks/` — Bug-bounty recon, leaked credentials hunts, cloud exposure playbooks
+- `defense/` — Defensive checklists, removal from search, `robots.txt` guidance
+- `tools/` — Practical usage for `pagodo`, `shodan-cli`, `recon-ng`, `theHarvester`, `spiderfoot`
 
 ---
 
@@ -89,37 +93,39 @@ Visual map:
 
 ---
 
-## 📚 Table of Contents (links)
+## 📚 Table of Contents (quick links)
 
-- [START-HERE.md](START-HERE.md)
-- [GLOSSARY.md](GLOSSARY.md)
-- google/
-  - [google/01-basic-operators.md](google/01-basic-operators.md)
-  - [google/02-advanced-operators.md](google/02-advanced-operators.md)
-  - [google/03-file-discovery.md](google/03-file-discovery.md)
-  - [google/04-login-portals.md](google/04-login-portals.md)
-  - [google/05-exposed-databases.md](google/05-exposed-databases.md)
-  - [google/06-config-and-secret-files.md](google/06-config-and-secret-files.md)
-  - [google/07-sensitive-documents.md](google/07-sensitive-documents.md)
-  - [google/08-cameras-and-iot.md](google/08-cameras-and-iot.md)
-  - [google/09-vulnerability-discovery.md](google/09-vulnerability-discovery.md)
-  - [google/10-cloud-storage-exposure.md](google/10-cloud-storage-exposure.md)
-  - [google/11-email-and-people.md](google/11-email-and-people.md)
-  - [google/12-subdomain-enumeration.md](google/12-subdomain-enumeration.md)
+- Core getting started
+  - [START-HERE.md](START-HERE.md)
+  - [GLOSSARY.md](GLOSSARY.md)
+
+- Search engines
   - [google/CHEATSHEET.md](google/CHEATSHEET.md)
-- bing/
   - [bing/README.md](bing/README.md)
-- shodan/
+  - [duckduckgo/README.md](duckduckgo/README.md)
+
+- Internet scanners
   - [shodan/README.md](shodan/README.md)
   - [shodan/05-favicon-hash-technique.md](shodan/05-favicon-hash-technique.md)
-- github-dorking/
+  - [censys/README.md](censys/README.md)
+  - [fofa/README.md](fofa/README.md)
+  - [zoomeye/README.md](zoomeye/README.md)
+
+- Code & secrets
+  - [github-dorking/README.md](github-dorking/README.md)
   - [github-dorking/02-api-keys-and-secrets.md](github-dorking/02-api-keys-and-secrets.md)
-- playbooks/
+
+- Specialized engines
+  - [specialized-engines/README.md](specialized-engines/README.md)
+
+- Playbooks & tooling
+  - [playbooks/README.md](playbooks/README.md)
   - [playbooks/bug-bounty-recon.md](playbooks/bug-bounty-recon.md)
-- defense/
-  - [defense/what-attackers-look-for.md](defense/what-attackers-look-for.md)
-- tools/
   - [tools/README.md](tools/README.md)
+
+- Defense
+  - [defense/README.md](defense/README.md)
+  - [defense/what-attackers-look-for.md](defense/what-attackers-look-for.md)
 
 ---
 
